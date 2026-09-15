@@ -391,6 +391,48 @@ main {
   color: var(--text);
 }
 
+/* Credentials */
+.subheading {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin: 2rem 0 1rem;
+}
+
+.subheading:first-of-type { margin-top: 0; }
+
+.cert-list {
+  list-style: none;
+  margin: 0 0 0.5rem;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cert-item:last-child { border-bottom: none; }
+
+.cert-name {
+  font-size: 0.94rem;
+  color: var(--text);
+  max-width: 560px;
+}
+
+.cert-meta {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
 /* Contact */
 .contact-grid {
   display: flex;
