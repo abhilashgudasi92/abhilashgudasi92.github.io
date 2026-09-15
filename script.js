@@ -33,7 +33,7 @@
 // Close the mobile nav after a link is tapped
 (function closeMobileNavOnLinkClick() {
   var toggle = document.getElementById('nav-toggle');
-  var links = document.querySelectorAll('.sidenav a');
+  var links = document.querySelectorAll('.topnav a');
   if (!toggle || !links.length) return;
 
   links.forEach(function (link) {

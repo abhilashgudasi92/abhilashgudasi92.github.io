@@ -7,57 +7,80 @@
 <meta name="description" content="Abhilash Basappa Gudasi — Principal Software Engineer building distributed systems and cloud infrastructure at scale.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<input type="checkbox" id="nav-toggle" class="nav-toggle-input">
-<label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
-  <span></span><span></span><span></span>
-</label>
+<header class="topbar">
+  <a href="#home" class="brand">{ABG}</a>
 
-<nav class="sidenav" aria-label="Primary">
-  <div class="sidenav-mark">ABG</div>
-  <ul>
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#experience">Experience</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#credentials">Credentials</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <div class="sidenav-status">
-    <span class="dot" aria-hidden="true"></span>
-    San Jose, CA
-  </div>
-</nav>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+  <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </label>
+
+  <nav class="topnav" aria-label="Primary">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
 <main>
 
   <section id="home" class="hero">
-    <div class="status-panel" role="status">
-      <span class="dot" aria-hidden="true"></span>
-      <span class="status-panel-text">production · zero downtime maintained</span>
+    <div class="hero-copy">
+      <div class="status-panel" role="status">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="status-panel-text">production · zero downtime maintained</span>
+      </div>
+
+      <h1 class="hero-title">Hi there, I'm<br><span class="hero-name">Abhilash.</span></h1>
+      <p class="hero-role">Principal Software Engineer — Distributed Systems &amp; Cloud Infrastructure</p>
+
+      <p class="hero-lede">
+        I design and run infrastructure control planes that don't go down while they grow.
+        At Oracle, I took a patching system from under 100 machines to a fleet of
+        <span class="stat-inline" data-count-to="8000">0</span>+ — without a single scheduled outage.
+      </p>
+
+      <div class="hero-links">
+        <a href="https://github.com/abhilashgudasi92" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+        <a href="https://www.linkedin.com/in/abhilashbg/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+      </div>
     </div>
 
-    <h1 class="hero-title">
-      Abhilash Basappa Gudasi
-    </h1>
-    <p class="hero-role">Principal Software Engineer — Distributed Systems &amp; Cloud Infrastructure</p>
+    <a href="#contact" class="hero-cta" aria-label="Get in touch">
+      <span>Let's<br>Connect</span>
+    </a>
 
-    <p class="hero-lede">
-      I design and run infrastructure control planes that don't go down while they grow.
-      At Oracle, I took a patching system from under 100 machines to a fleet of
-      <span class="stat-inline" data-count-to="8000">0</span>+ — without a single scheduled outage.
-    </p>
-
-    <div class="hero-links">
-      <a href="#contact" class="btn btn-primary">Get in touch</a>
-      <a href="https://github.com/abhilashgudasi92" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
-      <a href="https://www.linkedin.com/in/abhilashbg/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 420 420" class="node-graphic">
+        <g class="node-lines">
+          <line x1="210" y1="210" x2="60" y2="90"></line>
+          <line x1="210" y1="210" x2="350" y2="70"></line>
+          <line x1="210" y1="210" x2="380" y2="220"></line>
+          <line x1="210" y1="210" x2="330" y2="350"></line>
+          <line x1="210" y1="210" x2="140" y2="360"></line>
+          <line x1="210" y1="210" x2="40" y2="270"></line>
+          <line x1="210" y1="210" x2="70" y2="180"></line>
+          <line x1="210" y1="210" x2="260" y2="120"></line>
+        </g>
+        <circle cx="60" cy="90" r="7" class="node-small"></circle>
+        <circle cx="350" cy="70" r="9" class="node-small"></circle>
+        <circle cx="380" cy="220" r="6" class="node-small"></circle>
+        <circle cx="330" cy="350" r="8" class="node-small"></circle>
+        <circle cx="140" cy="360" r="6" class="node-small"></circle>
+        <circle cx="40" cy="270" r="7" class="node-small"></circle>
+        <circle cx="70" cy="180" r="5" class="node-small"></circle>
+        <circle cx="260" cy="120" r="6" class="node-small"></circle>
+        <circle cx="210" cy="210" r="26" class="node-hub"></circle>
+      </svg>
     </div>
   </section>
 
@@ -83,7 +106,7 @@
 
     <ol class="timeline">
       <li class="timeline-item">
-        <div class="timeline-marker current" aria-hidden="true"></div>
+        <div class="timeline-marker marker-oracle current" aria-hidden="true">O</div>
         <div class="timeline-content">
           <div class="timeline-head">
             <h3>Principal Member of Technical Staff</h3>
@@ -107,7 +130,7 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-marker marker-utd" aria-hidden="true">UTD</div>
         <div class="timeline-content">
           <div class="timeline-head">
             <h3>Computer Science Grader</h3>
@@ -118,7 +141,7 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-marker marker-mathworks" aria-hidden="true">MW</div>
         <div class="timeline-content">
           <div class="timeline-head">
             <h3>Mobile Application Developer Intern</h3>
@@ -135,7 +158,7 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-marker marker-verimatrix" aria-hidden="true">V</div>
         <div class="timeline-content">
           <div class="timeline-head">
             <h3>Software Developer Intern</h3>
@@ -151,7 +174,7 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-marker marker-intel" aria-hidden="true">intel</div>
         <div class="timeline-content">
           <div class="timeline-head">
             <h3>Software Developer</h3>
@@ -168,7 +191,7 @@
       </li>
 
       <li class="timeline-item">
-        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-marker marker-wipro" aria-hidden="true">W</div>
         <div class="timeline-content">
           <div class="timeline-head">
             <h3>Project Engineer</h3>
@@ -188,55 +211,55 @@
   <section id="projects" class="section">
     <h2 class="section-heading">Projects</h2>
 
-    <div class="projects-list">
-      <article class="project">
+    <div class="card-grid">
+      <article class="card">
         <h3>Fleet-wide Exadata patching platform</h3>
         <p>
           Replaced a manual, SRE-run patching process with self-scheduling, self-updating
           orchestration that only pages a human when intervention is genuinely needed. Scaled
           from under 100 to 8,000+ racks with zero downtime as a hard requirement.
         </p>
-        <div class="project-tags"><span>Java</span><span>OCI</span><span>Orchestration</span></div>
+        <div class="tag-row"><span>Java</span><span>OCI</span><span>Orchestration</span></div>
       </article>
 
-      <article class="project">
+      <article class="card">
         <h3>Granular infrastructure update controls</h3>
         <p>
           Let customers split infrastructure-component patching across multiple maintenance
           windows with pause, cancel, and postpone controls — now a foundational piece of
           Oracle's "Starship" initiative to collapse multi-reboot patching into a single reboot.
         </p>
-        <div class="project-tags"><span>Distributed Systems</span><span>Fleet Management</span></div>
+        <div class="tag-row"><span>Distributed Systems</span><span>Fleet Management</span></div>
       </article>
 
-      <article class="project">
+      <article class="card">
         <h3>Standardized error-handling framework</h3>
         <p>
           A shared error-handling framework adopted across Database Cloud Services by 200+
           engineers, cutting production incidents by 40% and giving teams a common language for
           failure.
         </p>
-        <div class="project-tags"><span>Reliability</span><span>Platform</span></div>
+        <div class="tag-row"><span>Reliability</span><span>Platform</span></div>
       </article>
 
-      <article class="project">
+      <article class="card">
         <h3>Auto-failover &amp; intelligent alerting</h3>
         <p>
           Rebuilt on-call around auto-failover and smarter alerting, cutting on-call burden by
           60% and eliminating 80% of false-positive pages, with standardized runbooks
           service-wide.
         </p>
-        <div class="project-tags"><span>SRE</span><span>Alerting</span></div>
+        <div class="tag-row"><span>SRE</span><span>Alerting</span></div>
       </article>
 
-      <article class="project">
+      <article class="card">
         <h3>On-device deep learning prototypes</h3>
         <p>
           At MathWorks, prototyped MATLAB Deep Learning on mobile — a TensorFlow Android
           object/number-recognition app and a MATLAB AlexNet Android build on ARM Compute
           Libraries.
         </p>
-        <div class="project-tags"><span>TensorFlow</span><span>Android</span><span>MATLAB</span></div>
+        <div class="tag-row"><span>TensorFlow</span><span>Android</span><span>MATLAB</span></div>
       </article>
     </div>
   </section>
@@ -281,36 +304,39 @@
   <section id="credentials" class="section">
     <h2 class="section-heading">Credentials</h2>
 
-    <h3 class="subheading">Certifications</h3>
-    <ul class="cert-list">
-      <li class="cert-item">
-        <span class="cert-name">Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</span>
-        <span class="cert-meta">Oracle</span>
-      </li>
-      <li class="cert-item">
-        <span class="cert-name">Oracle Cloud Infrastructure AI Foundations Associate</span>
-        <span class="cert-meta">Oracle</span>
-      </li>
-    </ul>
+    <div class="card-grid card-grid-3">
+      <article class="card credential-card">
+        <div class="credential-icon icon-oracle" aria-hidden="true">OCI</div>
+        <h3>Certifications</h3>
+        <ul class="credential-list">
+          <li>OCI 2025 Certified Generative AI Professional</li>
+          <li>OCI AI Foundations Associate</li>
+        </ul>
+      </article>
 
-    <h3 class="subheading">Honors &amp; publications</h3>
-    <ul class="cert-list">
-      <li class="cert-item">
-        <span class="cert-name">Award, "Smart traffic signals" — oneM2M IoT Hackathon</span>
-        <span class="cert-meta"></span>
-      </li>
-      <li class="cert-item">
-        <span class="cert-name">"Design of a low power Digital Down Converter for 802.16m - 4G WiMAX on FPGA" — undergraduate research on 4G LTE power reduction at IISc, presented at an IEEE conference and published in IEEE Xplore</span>
-        <span class="cert-meta"></span>
-      </li>
-    </ul>
+      <article class="card credential-card">
+        <div class="credential-icon icon-honor" aria-hidden="true">🏆</div>
+        <h3>Honors</h3>
+        <ul class="credential-list">
+          <li>Award for "Smart traffic signals" at a oneM2M IoT Hackathon</li>
+        </ul>
+      </article>
+
+      <article class="card credential-card">
+        <div class="credential-icon icon-pub" aria-hidden="true">IEEE</div>
+        <h3>Publication</h3>
+        <ul class="credential-list">
+          <li>"Design of a low power Digital Down Converter for 802.16m - 4G WiMAX on FPGA" — undergraduate research at IISc, presented at an IEEE conference and published in IEEE Xplore</li>
+        </ul>
+      </article>
+    </div>
   </section>
 
   <section id="education" class="section">
     <h2 class="section-heading">Education</h2>
     <ol class="timeline timeline-compact">
       <li class="timeline-item">
-        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-marker marker-utd" aria-hidden="true">UTD</div>
         <div class="timeline-content">
           <div class="timeline-head">
             <h3>M.S., Computer Science</h3>
@@ -320,7 +346,7 @@
         </div>
       </li>
       <li class="timeline-item">
-        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-marker marker-vtu" aria-hidden="true">VTU</div>
         <div class="timeline-content">
           <div class="timeline-head">
             <h3>B.E., Telecommunication Engineering</h3>
@@ -332,27 +358,22 @@
     </ol>
   </section>
 
-  <section id="contact" class="section section-contact">
-    <h2 class="section-heading">Contact</h2>
-    <p>Open to conversations about senior/staff engineering roles in distributed systems and cloud infrastructure.</p>
-    <div class="contact-grid">
-      <a href="mailto:abhi.bg11@gmail.com" class="contact-item">
-        <span class="contact-label">Email</span>
-        <span class="contact-value">abhi.bg11@gmail.com</span>
-      </a>
-      <a href="https://www.linkedin.com/in/abhilashbg/" target="_blank" rel="noopener" class="contact-item">
-        <span class="contact-label">LinkedIn</span>
-        <span class="contact-value">linkedin.com/in/abhilashbg</span>
-      </a>
-      <a href="https://github.com/abhilashgudasi92" target="_blank" rel="noopener" class="contact-item">
-        <span class="contact-label">GitHub</span>
-        <span class="contact-value">github.com/abhilashgudasi92</span>
-      </a>
-    </div>
-    <p class="footer-note">San Jose, CA</p>
-  </section>
-
 </main>
+
+<footer id="contact" class="footer">
+  <div class="footer-inner">
+    <div class="footer-text">
+      <p class="footer-name">Abhilash Basappa Gudasi</p>
+      <p class="footer-tagline">Principal Software Engineer at Oracle · San Jose, CA</p>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/abhilashbg/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/abhilashgudasi92" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:abhi.bg11@gmail.com">Email</a>
+      </div>
+    </div>
+    <a href="mailto:abhi.bg11@gmail.com" class="btn btn-primary footer-btn">Get in touch</a>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>
