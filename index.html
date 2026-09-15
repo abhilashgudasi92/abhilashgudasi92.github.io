@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abhilash Basappa Gudasi — Senior Software Engineer</title>
+<meta name="description" content="Abhilash Basappa Gudasi — Senior Software Engineer building distributed systems and cloud infrastructure at scale.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+<label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle navigation">
+  <span></span><span></span><span></span>
+</label>
+
+<nav class="sidenav" aria-label="Primary">
+  <div class="sidenav-mark">ABG</div>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="sidenav-status">
+    <span class="dot" aria-hidden="true"></span>
+    San Jose, CA
+  </div>
+</nav>
+
+<main>
+
+  <section id="home" class="hero">
+    <div class="status-panel" role="status">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="status-panel-text">production · zero downtime maintained</span>
+    </div>
+
+    <h1 class="hero-title">
+      Abhilash Basappa Gudasi
+    </h1>
+    <p class="hero-role">Senior Software Engineer — Distributed Systems &amp; Cloud Infrastructure</p>
+
+    <p class="hero-lede">
+      I design and run infrastructure control planes that don't go down while they grow.
+      At Oracle, I took a patching system from under 100 machines to a fleet of
+      <span class="stat-inline" data-count-to="8000">0</span>+ — without a single scheduled outage.
+    </p>
+
+    <div class="hero-links">
+      <a href="#contact" class="btn btn-primary">Get in touch</a>
+      <a href="https://github.com/abhilashgudasi92" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      <a href="https://www.linkedin.com/in/abhilashbg/" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2 class="section-heading">About</h2>
+    <p>
+      I've spent the last six-plus years as a founding engineer on Oracle's Exadata Cloud at
+      Customer control plane — from early architecture through general availability, and every
+      order of magnitude of growth since. My focus is the unglamorous, high-stakes work of
+      reliability engineering: automating what used to be manual, catching failures before
+      customers do, and building systems that scale without breaking their promises.
+    </p>
+    <p>
+      I currently lead a team of five engineers owning the roadmap for Exadata Infrastructure
+      patching across Exadata Cloud and Exadata Cloud at Customer, and I've designed
+      infrastructure now used as a foundation for Oracle's next-generation "Starship" patching
+      initiative.
+    </p>
+  </section>
+
+  <section id="experience" class="section">
+    <h2 class="section-heading">Experience</h2>
+
+    <ol class="timeline">
+      <li class="timeline-item">
+        <div class="timeline-marker current" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Senior / Principal Member of Technical Staff</h3>
+            <span class="timeline-date">Feb 2019 — Present</span>
+          </div>
+          <p class="timeline-org">Oracle · Santa Clara, CA</p>
+          <p class="timeline-sub">Promoted twice since joining as a founding engineer on the ExaCC control plane.</p>
+          <ul class="timeline-list">
+            <li>Joined as a founding engineer on the control plane for Exadata Cloud at Customer, taking it from early architecture through general availability, including Database and DbHome lifecycle CRUD orchestration.</li>
+            <li>Designed and built an automated, fleet-wide Exadata Infrastructure patching system, replacing a fully manual, SRE-driven process run on monthly/quarterly cadences.</li>
+            <li>Scaled the patching platform from under 100 to <strong>8,000+ Exadata racks</strong> while holding zero downtime as a hard requirement.</li>
+            <li>Architected a granular infrastructure update feature enabling customers to split patching across multiple maintenance windows with pause, cancel, and postpone controls — now a building block for Oracle's "Starship" initiative.</li>
+            <li>Lead a team of 5 engineers owning the roadmap and delivery of all new Exadata Infrastructure patching features.</li>
+            <li>Designed a standardized error-handling framework adopted by <strong>200+ engineers</strong> across Database Cloud Services, reducing production incidents by <strong>40%</strong>.</li>
+            <li>Cut on-call burden by <strong>60%</strong> through auto-failover and intelligent alerting, eliminating 80% of false-positive pages.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Mobile Application Developer Intern</h3>
+            <span class="timeline-date">Aug — Dec 2017</span>
+          </div>
+          <p class="timeline-org">MathWorks · Boston, MA</p>
+          <ul class="timeline-list">
+            <li>Prototyped MATLAB Deep Learning on mobile: a TensorFlow Android object/number-recognition app and a MATLAB AlexNet Android prototype on ARM Compute Libraries.</li>
+            <li>Built MATLAB Mobile iOS automation for iPhone and iPad.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Developer Intern</h3>
+            <span class="timeline-date">Jun — Aug 2017</span>
+          </div>
+          <p class="timeline-org">Verimatrix · San Diego, CA</p>
+          <ul class="timeline-list">
+            <li>Worked on the Verimatrix Video Content Authority System (VCAS).</li>
+            <li>Upgraded an Apple HLS catalog iOS app (Swift) to support offline playback of Multi-Rights FPS content.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="timeline-item">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>Software Developer, Agile</h3>
+            <span class="timeline-date">Jul 2014 — Jul 2016</span>
+          </div>
+          <p class="timeline-org">Wipro Technologies · Bangalore, India</p>
+          <ul class="timeline-list">
+            <li>Automated end-to-end testing across Intel motherboards with Python using the XTF framework.</li>
+            <li>Automated Windows UI workflows for tool, camera, and media installation using Intel APIs.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-heading">Projects</h2>
+
+    <div class="projects-list">
+      <article class="project">
+        <h3>Fleet-wide Exadata patching platform</h3>
+        <p>
+          Replaced a manual, SRE-run patching process with self-scheduling, self-updating
+          orchestration that only pages a human when intervention is genuinely needed. Scaled
+          from under 100 to 8,000+ racks with zero downtime as a hard requirement.
+        </p>
+        <div class="project-tags"><span>Java</span><span>OCI</span><span>Orchestration</span></div>
+      </article>
+
+      <article class="project">
+        <h3>Granular infrastructure update controls</h3>
+        <p>
+          Let customers split infrastructure-component patching across multiple maintenance
+          windows with pause, cancel, and postpone controls — now a foundational piece of
+          Oracle's "Starship" initiative to collapse multi-reboot patching into a single reboot.
+        </p>
+        <div class="project-tags"><span>Distributed Systems</span><span>Fleet Management</span></div>
+      </article>
+
+      <article class="project">
+        <h3>Standardized error-handling framework</h3>
+        <p>
+          A shared error-handling framework adopted across Database Cloud Services by 200+
+          engineers, cutting production incidents by 40% and giving teams a common language for
+          failure.
+        </p>
+        <div class="project-tags"><span>Reliability</span><span>Platform</span></div>
+      </article>
+
+      <article class="project">
+        <h3>Auto-failover &amp; intelligent alerting</h3>
+        <p>
+          Rebuilt on-call around auto-failover and smarter alerting, cutting on-call burden by
+          60% and eliminating 80% of false-positive pages, with standardized runbooks
+          service-wide.
+        </p>
+        <div class="project-tags"><span>SRE</span><span>Alerting</span></div>
+      </article>
+
+      <article class="project">
+        <h3>On-device deep learning prototypes</h3>
+        <p>
+          At MathWorks, prototyped MATLAB Deep Learning on mobile — a TensorFlow Android
+          object/number-recognition app and a MATLAB AlexNet Android build on ARM Compute
+          Libraries.
+        </p>
+        <div class="project-tags"><span>TensorFlow</span><span>Android</span><span>MATLAB</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-heading">Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skills-group">
+        <h3>Languages</h3>
+        <div class="tag-list">
+          <span>Java</span><span>Python</span><span>Scala</span><span>C#</span><span>SQL</span><span>JavaScript</span><span>HTML5/CSS</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Cloud &amp; Infrastructure</h3>
+        <div class="tag-list">
+          <span>Oracle Cloud Infrastructure</span><span>Exadata Cloud Service</span><span>Exadata Cloud at Customer</span><span>Control-plane design</span><span>Fleet orchestration</span><span>Patch automation</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Data &amp; Distributed Systems</h3>
+        <div class="tag-list">
+          <span>Apache Spark</span><span>Hadoop</span><span>HBase</span><span>Cassandra</span><span>MySQL</span><span>MLlib</span><span>Scikit-learn</span>
+        </div>
+      </div>
+      <div class="skills-group">
+        <h3>Practices &amp; Tools</h3>
+        <div class="tag-list">
+          <span>Reliability engineering</span><span>On-call / incident response</span><span>Auto-failover systems</span><span>Error-handling frameworks</span><span>Git</span><span>CI/CD</span><span>Agile</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education" class="section">
+    <h2 class="section-heading">Education</h2>
+    <ol class="timeline timeline-compact">
+      <li class="timeline-item">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>M.S., Computer Science</h3>
+            <span class="timeline-date">Dec 2018</span>
+          </div>
+          <p class="timeline-org">The University of Texas at Dallas · GPA 3.8</p>
+        </div>
+      </li>
+      <li class="timeline-item">
+        <div class="timeline-marker" aria-hidden="true"></div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <h3>B.E., Telecommunication Engineering</h3>
+            <span class="timeline-date">Jun 2014</span>
+          </div>
+          <p class="timeline-org">Visvesvaraya Technological University, India · GPA 3.8</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="contact" class="section section-contact">
+    <h2 class="section-heading">Contact</h2>
+    <p>Open to conversations about senior/staff engineering roles in distributed systems and cloud infrastructure.</p>
+    <div class="contact-grid">
+      <a href="mailto:abhi.bg11@gmail.com" class="contact-item">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">abhi.bg11@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/abhilashbg/" target="_blank" rel="noopener" class="contact-item">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">linkedin.com/in/abhilashbg</span>
+      </a>
+      <a href="https://github.com/abhilashgudasi92" target="_blank" rel="noopener" class="contact-item">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">github.com/abhilashgudasi92</span>
+      </a>
+    </div>
+    <p class="footer-note">San Jose, CA</p>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
